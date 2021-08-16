@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+$base-color: #37003c;
+$base-secondary-color: #fdfdfe;
+$headline-color: #fd2881;
+$font-color: rgb(36, 36, 36);
+@font-face {
+  font-family: Premier;
+  src: local("Premier"),
+  url("assets/fonts/Premier-Sans.woff");
+}
+body {
+  margin: 0;
+  font-family: Premier, sans-serif !important;
+  height: 100%;
+  overflow: hidden;
+  color: $font-color;
+
+  p {
+    margin: 0;
+    color: $base-color;
+  }
+}
