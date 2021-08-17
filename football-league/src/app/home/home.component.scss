@@ -1,0 +1,33 @@
+@import "../../styles";
+.tabs-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+}
+.tabs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background: $headline-color;
+  border-radius: 3px;
+  padding: 2px;
+  li {
+    font-size: 16px;
+    button {
+      width: 147px;
+    }
+    .nav-link {
+      color: $base-secondary-color;
+    }
+    .nav-link.active {
+      background: $base-secondary-color;
+      color: $font-color;
+    }
+  }
+}
+.tabs-information-container {
+  background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
+}
