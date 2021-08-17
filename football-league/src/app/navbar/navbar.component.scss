@@ -1,0 +1,13 @@
+@import "../../styles";
+.my-navbar {
+  background: $base-color !important;
+  padding: 15px;
+  -webkit-box-shadow: 0 6px 6px -6px $font-color;
+  -moz-box-shadow: 0 6px 6px -6px $font-color;
+  box-shadow: 0 6px 6px -6px $font-color;
+}
+.navbar-toggler {
+  cursor: pointer;
+  border: none;
+  svg {fill: $base-secondary-color}
+}
