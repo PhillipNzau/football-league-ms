@@ -3,8 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-
+  //padding: 15px;
 }
 .tabs-container {
   display: flex;
@@ -29,11 +28,18 @@
   }
 }
 .tabs-information-container {
-  background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
+  //background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
 }
 .latest-match-tab {
-  padding: 0 10px 0 0;
+  padding: 10px;
   background: red;
+  background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
+
+}
+.team-of-week-img-container {
+  img {
+    margin-left: -12px;
+  }
 }
 .team-of-week-container {
   display: flex;
@@ -42,7 +48,7 @@
   background: linear-gradient(90deg, rgba(227,11,167,1) 44%, rgba(194,0,128,1) 100%, rgba(191,3,184,1) 100%);
   .text-container {
     background: $base-color;
-    margin-left: -50px !important;
+    margin-left: -50px;
     width: 100%;
     height: 85px;
     padding: 10px;
@@ -81,6 +87,29 @@
       font-size: 15px;
       font-family: sans-serif;
       padding-top: 10px ;
+    }
+  }
+}
+.latest-news-section {
+  background: $base-secondary-color;
+  .latest-news-container {
+    padding: 10px;
+    p:nth-child(1) {
+      font-size: 25px;
+    }
+    .divider {
+      width: 100%;
+      height: 1.5px;
+      border-radius: 5px;
+      background: $subtitle-color;
+    }
+    .news-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .news-container-img {
+        width: 150px !important;
+      }
     }
   }
 }
