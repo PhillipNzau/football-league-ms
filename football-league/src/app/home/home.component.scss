@@ -31,6 +31,10 @@
 .tabs-information-container {
   background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
 }
+.latest-match-tab {
+  padding: 0 10px 0 0;
+  background: red;
+}
 .team-of-week-container {
   display: flex;
   align-items: center;
@@ -47,7 +51,7 @@
       font-style: italic;
       font-weight: 100;
       line-height: 20px;
-      color: white;
+      color: $subtitle-color;
     }
     p:nth-child(2){
       font-size: 36px;
@@ -55,8 +59,28 @@
       color: white;
       font-weight: 500;
       line-height: 20px;
-
     }
-
+  }
+}
+.latest-tab-blog {
+  padding: 10px;
+  background: $base-color;
+  .latest-blog-information-container {
+    padding: 10px;
+    p:nth-child(1) {
+      color: $headline-color;
+      font-weight: 100;
+    }
+    p:nth-child(2) {
+      font-size: 30px;
+      color: $base-secondary-color;
+      line-height: 20px;
+    }
+    p:nth-child(3) {
+      color: $subtitle-color;
+      font-size: 15px;
+      font-family: sans-serif;
+      padding-top: 10px ;
+    }
   }
 }
