@@ -1,10 +1,12 @@
 @import "../../styles";
+
 .tabs-container-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   //padding: 15px;
 }
+
 .tabs-container {
   display: flex;
   align-items: center;
@@ -13,45 +15,58 @@
   background: $headline-color;
   border-radius: 3px;
   padding: 2px;
+
   li {
     font-size: 16px;
+
     button {
       width: 147px;
     }
+
     .nav-link {
       color: $base-secondary-color;
     }
+
     .nav-link.active {
       background: $base-secondary-color;
       color: $font-color;
     }
   }
 }
+
 .tabs-information-container {
   //background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
 }
-.latest-match-tab {
-  padding: 10px;
-  background: red;
-  background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
 
+.latest-match-tab {
+  //padding: 10px;
+  background: red;
+
+  .latest-match-top-div {
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
+  }
 }
+
 .team-of-week-img-container {
   img {
     margin-left: -12px;
   }
 }
+
 .team-of-week-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(227,11,167,1) 44%, rgba(194,0,128,1) 100%, rgba(191,3,184,1) 100%);
+  background: linear-gradient(90deg, rgba(227, 11, 167, 1) 44%, rgba(194, 0, 128, 1) 100%, rgba(191, 3, 184, 1) 100%);
+
   .text-container {
     background: $base-color;
     margin-left: -50px;
     width: 100%;
     height: 85px;
     padding: 10px;
+
     p:nth-child(1) {
       font-size: 16px;
       font-style: italic;
@@ -59,7 +74,8 @@
       line-height: 20px;
       color: $subtitle-color;
     }
-    p:nth-child(2){
+
+    p:nth-child(2) {
       font-size: 36px;
       font-style: italic;
       color: white;
@@ -68,48 +84,81 @@
     }
   }
 }
+
 .latest-tab-blog {
   padding: 10px;
   background: $base-color;
+
   .latest-blog-information-container {
     padding: 10px;
+
     p:nth-child(1) {
       color: $headline-color;
       font-weight: 100;
     }
+
     p:nth-child(2) {
       font-size: 30px;
       color: $base-secondary-color;
       line-height: 20px;
     }
+
     p:nth-child(3) {
       color: $subtitle-color;
       font-size: 15px;
       font-family: sans-serif;
-      padding-top: 10px ;
+      padding-top: 10px;
     }
   }
 }
+
 .latest-news-section {
   background: $base-secondary-color;
+
   .latest-news-container {
     padding: 10px;
+
     p:nth-child(1) {
       font-size: 25px;
     }
+
     .divider {
       width: 100%;
       height: 1.5px;
       border-radius: 5px;
       background: $subtitle-color;
     }
+
     .news-container {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       .news-container-img {
         width: 150px !important;
       }
+
+      .news-container-information {
+        p:nth-child(1) {
+          color: $headline-color;
+          font-size: 14px;
+        }
+
+        p:nth-child(2) {
+          color: $font-color;
+          font-weight: lighter;
+        }
+      }
     }
+  }
+}
+
+.to-more-page {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  p:nth-child(1) {
+    font-size: 18px !important;
   }
 }
