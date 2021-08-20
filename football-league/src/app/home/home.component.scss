@@ -40,11 +40,11 @@
 
 .latest-match-tab {
   //padding: 10px;
-  background: red;
+  background: $base-color;
 
   .latest-match-top-div {
     padding: 10px;
-    background: linear-gradient(90deg, rgba(199, 40, 155, 1) 0%, rgba(199, 40, 145, 1) 50%, rgba(191, 3, 184, 1) 100%);
+    background: linear-gradient(90deg, rgb(249, 41, 135) 0%, rgb(200, 50, 192) 50%, rgb(150, 60, 253) 100%);
   }
 }
 
@@ -114,7 +114,6 @@
 
 .latest-news-section {
   background: $base-secondary-color;
-
   .latest-news-container {
     padding: 10px;
 
@@ -157,8 +156,30 @@
   display: flex;
   align-items: center;
   justify-content: end;
+  padding: 10px;
 
   p:nth-child(1) {
     font-size: 18px !important;
   }
+}
+
+.page-divider {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  .page-divider-div {
+    width: 90%;
+    height: 6px;
+    background: linear-gradient(90deg, rgb(150, 60, 253) 0%, rgb(200, 50, 192) 50%, rgb(249, 41, 135) 100%);
+  }
+}
+.in-section-divider {
+  margin-bottom: 20px;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(150, 60, 253) 0%, rgb(200, 50, 192) 50%, rgb(249, 41, 135) 100%);
+}
+.footer-section {
+  color: $base-secondary-color;
+
 }
