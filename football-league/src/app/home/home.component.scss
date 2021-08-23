@@ -179,7 +179,65 @@
   height: 4px;
   background: linear-gradient(90deg, rgb(150, 60, 253) 0%, rgb(200, 50, 192) 50%, rgb(249, 41, 135) 100%);
 }
+
+//latest-matches-result
+.match-table-header {
+  width: 100%;
+  text-align: center;
+  p:nth-child(1) {
+    color: $headline-color;
+  }
+}
+.matches-results-container {
+  min-width: 370px;
+}
+.match-results {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: $border;
+  height: 40px;
+  p {
+    transition: 0.3s;
+  }
+  &:hover {
+    background: linear-gradient(90deg, rgb(150, 60, 253) 0%, rgb(200, 50, 192) 50%, rgb(249, 41, 135) 100%);
+    p {
+      color: #fdfdfe !important;
+    }
+  }
+
+  .team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    p {
+      font-size: 26px !important;
+      margin: 0 10px 0 10px;
+    }
+  }
+  .result-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $base-color;
+    height: 30px;
+    p {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 0 ;
+      height: 30px;
+      font-size: 16px !important;
+      color: $base-secondary-color;
+    }
+  }
+  .view-results-detail {
+    //padding-left: 50px;
+  }
+}
+
 .footer-section {
   color: $base-secondary-color;
-
 }
