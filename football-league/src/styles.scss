@@ -26,3 +26,32 @@ body {
     padding: 0 !important;
   }
 }
+
+thead th {
+  background-color: #f6f7f9;
+  padding: 15px 0 15px 15px;
+  color: $base-color;
+}
+
+tbody td {
+  padding: 15px ;
+}
+thead th:first-child {
+  border-radius: 5px 0 0 5px;
+}
+thead th:last-child {
+  border-radius: 0 5px 5px 0;
+}
+/* remove border from th... */
+/* !important is only required in stack snippet, probably not in your production code */
+
+.table > thead > tr > th {
+  border: none !important;
+}
+
+/* remove border from first tbody row... */
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+  border-top: none;
+  border-bottom: $border;
+}
