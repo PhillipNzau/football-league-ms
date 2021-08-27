@@ -1,0 +1,31 @@
+@import "../../../styles";
+$imgKey: random(5);
+
+$list: green, red, blue,gray, maroon, purple;
+$nth: nth($list, $imgKey);
+
+
+.club-bg-img {
+  background: $base-color url('../../../assets/logos/team-stadium.jpg');
+  background-size: cover;
+  max-height: 200px;
+  padding: 50px;
+  .club-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 75px auto 0;
+    width: 100px;
+    height: 100px;
+    background: $base-secondary-color;
+    border-radius: 50%;
+    .logo-img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+.club-information-container {
+  min-height: 200px;
+  color: $base-secondary-color;
+}
