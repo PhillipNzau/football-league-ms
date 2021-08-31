@@ -108,3 +108,27 @@ $nth: nth($list, $imgKey);
     }
   }
 }
+.squad-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: $border;
+  cursor: pointer;
+  &:hover {background: $hover-color;}
+  .player-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img, h1 {
+      margin-right: 15px ;
+    }
+    .player-name-position {
+      line-height: 15px;
+      p:nth-child(2) {
+        font-family: sans-serif;
+        font-size: 10px;
+        //color: $subtitle-color;
+      }
+    }
+  }
+}

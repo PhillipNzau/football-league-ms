@@ -20,6 +20,9 @@ export class TeamInformationComponent implements OnInit {
   //   const color = Math.floor(0x1000000 * Math.random()).toString(16);
   //   return '#' + ('000000' + color).slice(-6);
   // }
+  numSeq(n: number): Array<number> {
+    return Array(n);
+  }
 
 
 }
