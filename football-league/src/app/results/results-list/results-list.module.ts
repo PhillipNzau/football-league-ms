@@ -6,10 +6,13 @@ import { ResultsListComponent } from './results-list.component';
 
 
 @NgModule({
-  declarations: [ResultsListComponent],
-  imports: [
-    CommonModule,
-    ResultsListRoutingModule
-  ]
+    declarations: [ResultsListComponent],
+    exports: [
+        ResultsListComponent
+    ],
+    imports: [
+        CommonModule,
+        ResultsListRoutingModule
+    ]
 })
 export class ResultsListModule { }

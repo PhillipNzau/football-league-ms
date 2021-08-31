@@ -6,6 +6,7 @@ $headline-color: #fd2881;
 $font-color: rgb(36, 36, 36);
 $subtitle-color: #d6cbd9;
 $border: 2px solid #f1f1f2;
+$hover-color: #f3f3f5;
 @font-face {
   font-family: Premier;
   src: local("Premier"),
@@ -16,6 +17,7 @@ body {
   font-family: Premier, sans-serif !important;
   height: 100%;
   color: $font-color;
+
 
   p {
     margin: 0;
@@ -54,4 +56,17 @@ thead th:last-child {
 .table > tbody > tr > th {
   border-top: none;
   border-bottom: $border;
+}
+.logo-img-table {
+  width: 20px;
+  height: 20px;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+.footer-section {
+  background: $base-color;
+  color: $base-secondary-color;
+  padding: 15px;
 }

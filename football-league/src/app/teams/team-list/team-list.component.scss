@@ -1,0 +1,94 @@
+@import "../../../styles";
+//header-section
+.clubs-header-section {
+  background: $base-color;
+  padding: 15px;
+  .clubs-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    .custom-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 75px;
+      height: 40px;
+      padding: 10px;
+      background: $base-secondary-color;
+      transition: 0.3s;
+      &:hover{
+        background: $headline-color;
+        color: $base-secondary-color;
+      }
+    }
+  }
+  .search-clubs-container {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    //justify-content: space-between;
+    input {
+      width: 100%;
+      background: black;
+      border: none;
+      padding: 11px;
+      border-radius: 50px;
+      font-size: 20px;
+      color: $subtitle-color;
+      transition: 0.3s;
+      transition-timing-function: ease-in-out;
+      &:focus {
+        outline: none;
+        border: 0.8px solid $headline-color;
+      }
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $subtitle-color;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $subtitle-color;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $subtitle-color;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $subtitle-color;
+      }
+    }
+  }
+}
+
+//teams-container-section
+.clubs-content-section {
+  background: $base-secondary-color;
+  padding: 15px;
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  .club-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: $border;
+    &:hover  {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .club-logo-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo-img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+      }
+      .club-name-stadium {
+        padding: 10px;
+        line-height: 0px;
+      }
+    }
+  }
+}
