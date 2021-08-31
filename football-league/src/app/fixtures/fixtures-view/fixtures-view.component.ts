@@ -11,5 +11,8 @@ export class FixturesViewComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  numSeq(n: number): Array<number> {
+    return Array(n);
+  }
 
 }

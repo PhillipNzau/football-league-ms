@@ -6,10 +6,13 @@ import { TableListComponent } from './table-list.component';
 
 
 @NgModule({
-  declarations: [TableListComponent],
-  imports: [
-    CommonModule,
-    TableListRoutingModule
-  ]
+    declarations: [TableListComponent],
+    exports: [
+        TableListComponent
+    ],
+    imports: [
+        CommonModule,
+        TableListRoutingModule
+    ]
 })
 export class TableListModule { }

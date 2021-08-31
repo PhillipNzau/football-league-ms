@@ -11,5 +11,8 @@ export class TableListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  numSeq(n: number): Array<number> {
+    return Array(n);
+  }
 
 }

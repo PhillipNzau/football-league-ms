@@ -6,10 +6,13 @@ import { FixturesListComponent } from './fixtures-list.component';
 
 
 @NgModule({
-  declarations: [FixturesListComponent],
-  imports: [
-    CommonModule,
-    FixturesListRoutingModule
-  ]
+    declarations: [FixturesListComponent],
+    exports: [
+        FixturesListComponent
+    ],
+    imports: [
+        CommonModule,
+        FixturesListRoutingModule
+    ]
 })
 export class FixturesListModule { }
