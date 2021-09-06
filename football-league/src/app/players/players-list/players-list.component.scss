@@ -1,0 +1,31 @@
+@import "../../../styles";
+@import "../../teams/team-information/team-information.component";
+
+.player-container {
+  background: url("../../../assets/logos/player-bg.svg") no-repeat;
+  background-size: cover ;
+  //padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-holder {
+  width: 140px;
+  height: 140px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.player-info-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  ul{li{
+    min-width: 160px;
+    button {
+      width: 100%;
+    }
+  }}
+}
