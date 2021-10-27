@@ -7,11 +7,11 @@ const routes: Routes = [
   {
     path: '', component: PlayersComponent, children: [
       {
-        path: '',
+        path: 'players-view',
         loadChildren: () => import('./players-list/players-list.module').then(m => m.PlayersListModule)
       },
       {
-        path: 'players-view',
+        path: '',
         loadChildren: () => import('./players-view/players-view.module').then(m => m.PlayersViewModule)
       },
       {

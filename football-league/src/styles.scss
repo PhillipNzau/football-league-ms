@@ -70,3 +70,14 @@ thead th:last-child {
   color: $base-secondary-color;
   padding: 15px;
 }
+.page-divider {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  .page-divider-div {
+    width: 90%;
+    height: 6px;
+    background: linear-gradient(90deg, rgb(150, 60, 253) 0%, rgb(200, 50, 192) 50%, rgb(249, 41, 135) 100%);
+  }
+}
